@@ -19,7 +19,7 @@ var funcione = (function () {
         countries.map(function (country) {
             $("#estadisticas > tbody").append(
                 "<tr> <td>" +
-                "<form><button class='btn btn-primary' type='button' onclick='funcione.getCountryStatistics(\"" +
+                "<form><button class='btn btn-warning btn-lg btn-block' type='button' onclick='funcione.getCountryStatistics(\"" +
                 country.countryname+ "\""+ ")' >"+country.countryname+"</button></form>"+
                 "</td>" +
                 "<td>" +

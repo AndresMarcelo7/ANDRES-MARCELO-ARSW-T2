@@ -1,5 +1,31 @@
 # Escuela Colombiana de Ingeniería Julio Garavito - Arquitecturas de Software ARSW - Parcial Segundo Tercio
 
+##Soluciones Requerimientos de Entrega:  
+
+### Diseño de arquitectura:  
+- La arquitectura del proyecto es cliente - servidor
+- El cliente es un browser que a travez de Java-Script accede a los servicios del servidor que se encuentran implementados con (API REST)
+- El servidor consume servicios de 2 API externas 
+- El acoplamiento del proyecto es reducido, debido a que se maneja un patron de disño basado en INTERFACES que permite la implementacion de los servicios
+en distintos contextos, además, se usa inyeccion de dependencias para ello.
+- En terminos de extension solamente basta con crear implementaciones de las interfaces propuestas y en los llamados que se le hagan con Autowired, poner el Qualifier para evitar errores.
+- El diagrama de componentes fue modificado para agregar el api de Localizacion
+### Ejecucion del prgrama localmente:  
+- Descargar / Clonar el repositorio
+- acceder a la ubicacion del proyecto en cmd 
+- ejecutar el comando ``` mvn compile ```
+- ejecutar el comando ``` mvn spring-boot:run```
+- una vez finalizado, en su navegador acceder a [local](http://localhost:8080)
+
+### Como se puede extender y como podria hacer que una funcion implemente un proveedor de servicios diferente:  
+- Como se menciono anteriormente, una nueva clase puede implementar cualquiera de las interfaces propuestas en el proyecto y hacer uso de las anotaciones Qualifier y Autowired
+- Si se quiere modificar el frontend, solo basta con crear un nuevo js con la nueva implementacion del api y en la variable api (app.js ) poner el nombre de lo nuevo.
+###  HEROKU URL
+[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://andres-marcelo-arsw-t2.herokuapp.com/)
+
+### Bonos
+- Se realizo el Bono del Caché
+
 ## Preparación para el Parcial
 
 Con el objetivo de preparar el examen final del segundo tercio, por favor siga las siguientes instrucciones.
@@ -54,6 +80,8 @@ Sugerencia realice la implementación de manera incremental. Haga commits regula
 
 ![](ArchitectureDiagrams/ComponentDiagram.png)
 
+### Nuevo Diagrama de Componentes
+![](ArchitectureDiagrams/NewComponentDiagram.png)
 ## Requerimientos de Entrega
 
 1.  La aplicación funcionando en Heroku con el nombre (NOMBRE-APELLIDO-ARSW-T2) y el código fuente almacenado en un proyecto GitHub con el nombre (NOMBRE-APELLIDO-ARSW-T2).
