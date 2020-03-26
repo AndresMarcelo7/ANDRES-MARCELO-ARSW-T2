@@ -8,6 +8,9 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
+/**
+ * The type Http connection covid.
+ */
 @Service
 public class HttpConnectionCovidImpl implements HttpConnectionCovid {
     @Override

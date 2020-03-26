@@ -1,0 +1,10 @@
+edu.eci.arsw.covidsearch
+edu.eci.arsw.covidsearch.CoronavirusStatsCache
+edu.eci.arsw.covidsearch.CoronavirusStatsCache.impl
+edu.eci.arsw.covidsearch.CoronavirusStatsController
+edu.eci.arsw.covidsearch.CoronavirusStatsServices
+edu.eci.arsw.covidsearch.CoronavirusStatsServices.impl
+edu.eci.arsw.covidsearch.exception
+edu.eci.arsw.covidsearch.HttpConnectionServices
+edu.eci.arsw.covidsearch.HttpConnectionServices.impl
+edu.eci.arsw.covidsearch.model

@@ -6,11 +6,17 @@ import org.springframework.stereotype.Service;
 
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * The type Cache covid.
+ */
 @Service
 public class CacheCovidImpl implements CacheCovid {
 
     private ConcurrentHashMap<String,Tuple<CountryStats,Long>> cache;
 
+    /**
+     * Instantiates a new Cache Memory.
+     */
     public CacheCovidImpl() {
         this.cache= new ConcurrentHashMap<String,Tuple<CountryStats,Long>>();
     }

@@ -17,11 +17,20 @@ import org.springframework.stereotype.Service;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * The type Stats services covid.
+ */
 @Service
 public class StatsServicesCovidImpl implements StatsServicesCovid {
+    /**
+     * The Httpservice.
+     */
     @Autowired
     HttpConnectionCovid httpService;
 
+    /**
+     * The Cache.
+     */
     @Autowired
     CacheCovid cacheCovid;
 
