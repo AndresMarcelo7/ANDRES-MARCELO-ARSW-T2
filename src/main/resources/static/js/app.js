@@ -116,6 +116,7 @@ var funcione = (function () {
         api.getStatisticsByName(name).then(function (data){
             _tabled(data);
             plotMarkers(data)});
+        window.scrollTo(0,document.body.scrollHeight);
     }
 
 

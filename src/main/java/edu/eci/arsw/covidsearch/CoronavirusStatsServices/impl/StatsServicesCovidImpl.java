@@ -41,6 +41,7 @@ public class StatsServicesCovidImpl implements StatsServicesCovid {
                             object.getInt("deaths"),
                             object.getInt("recovered")));
         }
+        data.orderCountries();
         return data;
     }
 
@@ -64,6 +65,7 @@ public class StatsServicesCovidImpl implements StatsServicesCovid {
                 return ct;
             }
         }
+
         return availableCache.getElem1();
     }
 

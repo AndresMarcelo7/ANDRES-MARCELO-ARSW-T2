@@ -3,6 +3,8 @@ package edu.eci.arsw.covidsearch.model;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 @Component
 public class WorldStats {
@@ -57,6 +59,12 @@ public class WorldStats {
             }
         }
         return null;
+    }
+
+    public void orderCountries(){
+        Collections.sort(countries, Comparator.comparing(CountryStats::getTotalDeaths)
+                .thenComparing(CountryStats::getTotalConfirmed)
+                .thenComparing(CountryStats::getTotalRecovered).reversed());
     }
 
     public void addProvince(String country, ProvinceStats province){
