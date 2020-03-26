@@ -1,4 +1,4 @@
-# Escuela Colombiana de Ingeniería Julio Garavito - Arquitecturas de Software ARSW - Parcial Segundo Tercio
+﻿# Escuela Colombiana de Ingeniería Julio Garavito - Arquitecturas de Software ARSW - Parcial Segundo Tercio
 
 ##Soluciones Requerimientos de Entrega:  
 
@@ -25,6 +25,10 @@ en distintos contextos, además, se usa inyeccion de dependencias para ello.
 
 ### Bonos
 - Se realizo el Bono del Caché
+- Del Numero 1 al numero 2, paso solo un minuto, se puede evidenciar que el tiempo de carga de cada uno es distinto, el segundo  
+es mucho menos, y del 2 al 3 pasaron 5 minutos, y por lo que se puede observar, el tiempo de carga aumento, pues ya se acabo el tiempo de almacenamiento en cache
+
+![](ArchitectureDiagrams/totalCargas.png)
 
 ## Preparación para el Parcial
 
